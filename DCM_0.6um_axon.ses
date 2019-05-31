@@ -1,0 +1,1781 @@
+{load_file("nrngui.hoc")}
+objectvar save_window_, rvp_
+objectvar scene_vector_[6]
+objectvar ocbox_, ocbox_list_, scene_, scene_list_
+{ocbox_list_ = new List()  scene_list_ = new List()}
+{pwman_place(0,0,0)}
+
+//Begin ChannelBuild[0] managed KSChan[0]
+{
+load_file("chanbild.hoc", "ChannelBuild")
+}
+{ion_register("na", 1)}
+{ocbox_ = new ChannelBuild(1)}
+{object_push(ocbox_)}
+{genprop.set_data("Nav", 1, 0, 5, "na")}
+{genprop.set_defstr(0.033, 0)}
+tobj = new ChannelBuildKSGate(this)
+{gatelist.append(tobj)}
+{tobj.begin_restore(3)}
+{tobj.set_state("m", 1, 110, 130)}
+{tobj.set_trans(0, 0, 0)}
+{tobj.transitions.object(0).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+11.344
+0.165
+-54.49
+{tobj.transitions.object(0).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+37.386
+-0.10627
+-59
+{tobj.transitions.object(0).set_f(1, 3, tobj1)}
+{tobj.end_restore()}
+tobj = new ChannelBuildKSGate(this)
+{gatelist.append(tobj)}
+{tobj.begin_restore(1)}
+{tobj.set_state("h", 1, 160, 130)}
+{tobj.set_trans(0, 0, 0)}
+{tobj.transitions.object(0).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+4.983
+-0.11038
+-107.74
+{tobj.transitions.object(0).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+22.61
+-0.08
+-24
+{tobj.transitions.object(0).set_f(1, 4, tobj1)}
+{tobj.end_restore()}
+end_restore()
+{genprop.set_single(0)}
+{set_alias(0)}
+{usetable(0)}
+{object_pop()}
+{
+ocbox_.map("ChannelBuild[0] managed KSChan[0]", 0, 77, 240, 192)
+}
+objref ocbox_
+//End ChannelBuild[0] managed KSChan[0]
+
+{WindowMenu[0].ses_gid(1, 0, 1, "Jerome Channels Group")}
+
+//Begin ChannelBuild[1] managed KSChan[1]
+{
+load_file("chanbild.hoc", "ChannelBuild")
+}
+{ion_register("k", 1)}
+{ocbox_ = new ChannelBuild(1)}
+{object_push(ocbox_)}
+{genprop.set_data("Ks", 1, 0, 6, "k")}
+{genprop.set_defstr(9.37e-05, 0)}
+tobj = new ChannelBuildKSGate(this)
+{gatelist.append(tobj)}
+{tobj.begin_restore(4)}
+{tobj.set_state("s", 1, 130, 140)}
+{tobj.set_trans(0, 0, 0)}
+{tobj.transitions.object(0).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.093751
+0.063573
+-95.75
+{tobj.transitions.object(0).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+0.2322
+-0.1171
+-69.76
+{tobj.transitions.object(0).set_f(1, 3, tobj1)}
+{tobj.end_restore()}
+end_restore()
+{genprop.set_single(0)}
+{set_alias(0)}
+{usetable(0)}
+{object_pop()}
+{
+ocbox_.map("ChannelBuild[1] managed KSChan[1]", 0, 269, 241, 197)
+}
+objref ocbox_
+//End ChannelBuild[1] managed KSChan[1]
+
+{WindowMenu[0].ses_gid(0, 0, 1, "Jerome Channels Group")}
+
+//Begin ChannelBuild[2] managed KSChan[2]
+{
+load_file("chanbild.hoc", "ChannelBuild")
+}
+{ion_register("k", 1)}
+{ocbox_ = new ChannelBuild(1)}
+{object_push(ocbox_)}
+{genprop.set_data("Kf", 1, 0, 6, "k")}
+{genprop.set_defstr(0.000375, 0)}
+tobj = new ChannelBuildKSGate(this)
+{gatelist.append(tobj)}
+{tobj.begin_restore(2)}
+{tobj.set_state("n", 1, 150, 130)}
+{tobj.set_trans(0, 0, 0)}
+{tobj.transitions.object(0).settype(0, "")}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+1.29
+0.1
+-45
+{tobj.transitions.object(0).set_f(0, 3, tobj1)}
+{tobj1 = new Vector(3)  for (i=0; i < 3; i += 1) tobj1.x[i] = fscan() }
+3.24
+-0.1
+-70
+{tobj.transitions.object(0).set_f(1, 3, tobj1)}
+{tobj.end_restore()}
+end_restore()
+{genprop.set_single(0)}
+{set_alias(0)}
+{usetable(0)}
+{object_pop()}
+{
+ocbox_.map("ChannelBuild[2] managed KSChan[2]", 1, 491, 237, 187)
+}
+objref ocbox_
+//End ChannelBuild[2] managed KSChan[2]
+
+{WindowMenu[0].ses_gid(0, 0, 1, "Jerome Channels Group")}
+
+//Begin CellBuild[0]
+{
+load_file("celbild.hoc", "CellBuild")
+}
+{ocbox_ = new CellBuild(1)}
+{object_push(ocbox_)}
+{
+version(5.7)
+continuous = 1
+}
+{object_push(topol)}
+{
+first = 0
+slist.remove_all()
+sname = "Syn"
+objref tobj
+}
+{
+tobj = new CellBuildSection("soma",0, 0, tobj, 0) slist.append(tobj)
+  tobj.position(-600,225,-600,240) tobj.lx=-604.189 tobj.ly=262.838 tobj.i3d=0
+tobj = new CellBuildSection("unmy",0, 0, tobj, 0) slist.append(tobj)
+tobj.parent=slist.object(0)
+  tobj.position(-600,225,-600,165) tobj.lx=-627.973 tobj.ly=181.054 tobj.i3d=0
+tobj = new CellBuildSection("pn",0, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(1)
+  tobj.position(-600,165,-585,150) tobj.lx=-563.108 tobj.ly=166.459 tobj.i3d=0
+tobj = new CellBuildSection("pn",1, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(2)
+  tobj.position(-585,150,-600,135) tobj.lx=-632.838 tobj.ly=148.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",2, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(3)
+  tobj.position(-600,135,-585,120) tobj.lx=-551.757 tobj.ly=135.649 tobj.i3d=0
+tobj = new CellBuildSection("pn",3, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(4)
+  tobj.position(-585,120,-600,105) tobj.lx=-634.459 tobj.ly=117.811 tobj.i3d=0
+tobj = new CellBuildSection("jp",0, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(5)
+  tobj.position(-600,105,-600,90) tobj.lx=-563.108 tobj.ly=101.595 tobj.i3d=0
+tobj = new CellBuildSection("In",0, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(6)
+  tobj.position(-600,90,-600,30) tobj.lx=-626.351 tobj.ly=68.351 tobj.i3d=0
+tobj = new CellBuildSection("jp",1, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(7)
+  tobj.position(-600,30,-600,15) tobj.lx=-636.081 tobj.ly=29.027 tobj.i3d=0
+tobj = new CellBuildSection("pn",4, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(8)
+  tobj.position(-600,15,-585,0) tobj.lx=-548.514 tobj.ly=15.243 tobj.i3d=0
+tobj = new CellBuildSection("pn",5, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(9)
+  tobj.position(-585,0,-600,-15) tobj.lx=-639.324 tobj.ly=1.459 tobj.i3d=0
+tobj = new CellBuildSection("pn",6, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(10)
+  tobj.position(-600,-15,-585,-30) tobj.lx=-546.892 tobj.ly=-15.568 tobj.i3d=0
+tobj = new CellBuildSection("pn",7, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(11)
+  tobj.position(-585,-30,-600,-45) tobj.lx=-640.946 tobj.ly=-30.973 tobj.i3d=0
+tobj = new CellBuildSection("N",0, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(12)
+  tobj.position(-600,-45,-600,-60) tobj.lx=-563.919 tobj.ly=-49.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",8, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(13)
+  tobj.position(-600,-60,-585,-75) tobj.lx=-642.568 tobj.ly=-65.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",9, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(14)
+  tobj.position(-585,-75,-600,-90) tobj.lx=-542.027 tobj.ly=-80.027 tobj.i3d=0
+tobj = new CellBuildSection("pn",10, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(15)
+  tobj.position(-600,-90,-585,-105) tobj.lx=-647.432 tobj.ly=-96.243 tobj.i3d=0
+tobj = new CellBuildSection("pn",11, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(16)
+  tobj.position(-585,-105,-600,-120) tobj.lx=-538.784 tobj.ly=-114.081 tobj.i3d=0
+tobj = new CellBuildSection("jp",2, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(17)
+  tobj.position(-600,-120,-600,-135) tobj.lx=-639.324 tobj.ly=-125.432 tobj.i3d=0
+tobj = new CellBuildSection("In",1, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(18)
+  tobj.position(-600,-135,-600,-195) tobj.lx=-548.514 tobj.ly=-159.486 tobj.i3d=0
+tobj = new CellBuildSection("jp",3, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(19)
+  tobj.position(-600,-195,-600,-210) tobj.lx=-544.865 tobj.ly=-200.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",12, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(20)
+  tobj.position(-600,-210,-585,-225) tobj.lx=-647.027 tobj.ly=-216.649 tobj.i3d=0
+tobj = new CellBuildSection("pn",13, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(21)
+  tobj.position(-585,-225,-600,-240) tobj.lx=-536.757 tobj.ly=-229.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",14, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(22)
+  tobj.position(-600,-240,-585,-255) tobj.lx=-647.432 tobj.ly=-246.649 tobj.i3d=0
+tobj = new CellBuildSection("pn",15, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(23)
+  tobj.position(-585,-255,-600,-270) tobj.lx=-536.757 tobj.ly=-260.432 tobj.i3d=0
+}
+{
+tobj = new CellBuildSection("N",1, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(24)
+  tobj.position(-600,-270,-600,-285) tobj.lx=-635.676 tobj.ly=-273.405 tobj.i3d=0
+tobj = new CellBuildSection("pn",16, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(25)
+  tobj.position(-600,-285,-585,-300) tobj.lx=-536.757 tobj.ly=-288 tobj.i3d=0
+tobj = new CellBuildSection("pn",17, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(26)
+  tobj.position(-585,-300,-600,-315) tobj.lx=-645.811 tobj.ly=-303.811 tobj.i3d=0
+tobj = new CellBuildSection("pn",18, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(27)
+  tobj.position(-600,-315,-585,-330) tobj.lx=-536.757 tobj.ly=-315.568 tobj.i3d=0
+tobj = new CellBuildSection("pn",19, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(28)
+  tobj.position(-585,-330,-600,-345) tobj.lx=-645.811 tobj.ly=-334.622 tobj.i3d=0
+tobj = new CellBuildSection("jp",4, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(29)
+  tobj.position(-600,-345,-600,-360) tobj.lx=-547.703 tobj.ly=-349.622 tobj.i3d=0
+tobj = new CellBuildSection("In",2, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(30)
+  tobj.position(-600,-360,-600,-420) tobj.lx=-546.081 tobj.ly=-386.919 tobj.i3d=0
+tobj = new CellBuildSection("jp",5, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(31)
+  tobj.position(-600,-420,-600,-435) tobj.lx=-548.514 tobj.ly=-421.784 tobj.i3d=0
+tobj = new CellBuildSection("pn",20, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(32)
+  tobj.position(-600,-435,-585,-450) tobj.lx=-647.432 tobj.ly=-438 tobj.i3d=0
+tobj = new CellBuildSection("pn",21, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(33)
+  tobj.position(-585,-450,-600,-465) tobj.lx=-543.649 tobj.ly=-455.838 tobj.i3d=0
+tobj = new CellBuildSection("pn",22, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(34)
+  tobj.position(-600,-465,-585,-480) tobj.lx=-645.811 tobj.ly=-470.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",23, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(35)
+  tobj.position(-585,-480,-600,-495) tobj.lx=-544.459 tobj.ly=-482.595 tobj.i3d=0
+tobj = new CellBuildSection("N",2, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(36)
+  tobj.position(-600,-495,-600,-510) tobj.lx=-635.27 tobj.ly=-497.19 tobj.i3d=0
+tobj = new CellBuildSection("pn",24, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(37)
+  tobj.position(-600,-510,-585,-525) tobj.lx=-542.838 tobj.ly=-508.54 tobj.i3d=0
+tobj = new CellBuildSection("pn",25, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(38)
+  tobj.position(-585,-525,-600,-540) tobj.lx=-645 tobj.ly=-525.97 tobj.i3d=0
+tobj = new CellBuildSection("pn",26, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(39)
+  tobj.position(-600,-540,-585,-555) tobj.lx=-545.27 tobj.ly=-538.95 tobj.i3d=0
+tobj = new CellBuildSection("pn",27, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(40)
+  tobj.position(-585,-555,-600,-570) tobj.lx=-646.622 tobj.ly=-553.54 tobj.i3d=0
+tobj = new CellBuildSection("jp",6, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(41)
+  tobj.position(-600,-570,-600,-585) tobj.lx=-542.838 tobj.ly=-573.4 tobj.i3d=0
+tobj = new CellBuildSection("In",3, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(42)
+  tobj.position(-600,-585,-600,-645) tobj.lx=-552.568 tobj.ly=-612.32 tobj.i3d=0
+tobj = new CellBuildSection("jp",7, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(43)
+  tobj.position(-600,-645,-600,-660) tobj.lx=-550.946 tobj.ly=-645.57 tobj.i3d=0
+tobj = new CellBuildSection("pn",28, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(44)
+  tobj.position(-600,-660,-585,-675) tobj.lx=-645 tobj.ly=-669.89 tobj.i3d=0
+tobj = new CellBuildSection("pn",29, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(45)
+  tobj.position(-585,-675,-600,-690) tobj.lx=-546.081 tobj.ly=-679.62 tobj.i3d=0
+tobj = new CellBuildSection("pn",30, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(46)
+  tobj.position(-600,-690,-585,-705) tobj.lx=-645 tobj.ly=-699.08 tobj.i3d=0
+tobj = new CellBuildSection("pn",31, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(47)
+  tobj.position(-585,-705,-600,-720) tobj.lx=-544.459 tobj.ly=-708.81 tobj.i3d=0
+tobj = new CellBuildSection("N",3, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(48)
+  tobj.position(-600,-720,-600,-735) tobj.lx=-643.378 tobj.ly=-723.81 tobj.i3d=0
+}
+{
+tobj = new CellBuildSection("pn",32, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(49)
+  tobj.position(-600,-735,-585,-750) tobj.lx=-544.459 tobj.ly=-733.54 tobj.i3d=0
+tobj = new CellBuildSection("pn",33, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(50)
+  tobj.position(-585,-750,-600,-765) tobj.lx=-641.757 tobj.ly=-753 tobj.i3d=0
+tobj = new CellBuildSection("pn",34, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(51)
+  tobj.position(-600,-765,-585,-780) tobj.lx=-547.703 tobj.ly=-765.97 tobj.i3d=0
+tobj = new CellBuildSection("pn",35, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(52)
+  tobj.position(-585,-780,-600,-795) tobj.lx=-642.162 tobj.ly=-780.16 tobj.i3d=0
+tobj = new CellBuildSection("jp",8, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(53)
+  tobj.position(-600,-795,-600,-810) tobj.lx=-634.054 tobj.ly=-812.6 tobj.i3d=0
+tobj = new CellBuildSection("In",4, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(54)
+  tobj.position(-600,-810,-345,-810) tobj.lx=-471.486 tobj.ly=-787.87 tobj.i3d=0
+tobj = new CellBuildSection("jp",9, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(55)
+  tobj.position(-345,-810,-345,-795) tobj.lx=-304.459 tobj.ly=-819.08 tobj.i3d=0
+tobj = new CellBuildSection("pn",36, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(56)
+  tobj.position(-345,-795,-330,-780) tobj.lx=-289.865 tobj.ly=-788.27 tobj.i3d=0
+tobj = new CellBuildSection("pn",37, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(57)
+  tobj.position(-330,-780,-345,-765) tobj.lx=-390.405 tobj.ly=-770.43 tobj.i3d=0
+tobj = new CellBuildSection("pn",38, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(58)
+  tobj.position(-345,-765,-330,-750) tobj.lx=-293.108 tobj.ly=-754.22 tobj.i3d=0
+tobj = new CellBuildSection("pn",39, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(59)
+  tobj.position(-330,-750,-345,-735) tobj.lx=-388.784 tobj.ly=-741.24 tobj.i3d=0
+tobj = new CellBuildSection("N",4, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(60)
+  tobj.position(-345,-735,-345,-720) tobj.lx=-299.595 tobj.ly=-723.4 tobj.i3d=0
+tobj = new CellBuildSection("pn",40, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(61)
+  tobj.position(-345,-720,-330,-705) tobj.lx=-388.784 tobj.ly=-706.38 tobj.i3d=0
+tobj = new CellBuildSection("pn",41, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(62)
+  tobj.position(-330,-705,-345,-690) tobj.lx=-289.865 tobj.ly=-690.16 tobj.i3d=0
+tobj = new CellBuildSection("pn",42, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(63)
+  tobj.position(-345,-690,-330,-675) tobj.lx=-387.162 tobj.ly=-673.95 tobj.i3d=0
+tobj = new CellBuildSection("pn",43, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(64)
+  tobj.position(-330,-675,-345,-660) tobj.lx=-289.865 tobj.ly=-659.35 tobj.i3d=0
+tobj = new CellBuildSection("jp",10, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(65)
+  tobj.position(-345,-660,-345,-645) tobj.lx=-379.054 tobj.ly=-645.57 tobj.i3d=0
+tobj = new CellBuildSection("In",5, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(66)
+  tobj.position(-345,-645,-345,-585) tobj.lx=-379.054 tobj.ly=-615.16 tobj.i3d=0
+tobj = new CellBuildSection("jp",11, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(67)
+  tobj.position(-345,-585,-345,-570) tobj.lx=-388.784 tobj.ly=-574.62 tobj.i3d=0
+tobj = new CellBuildSection("pn",44, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(68)
+  tobj.position(-345,-570,-330,-555) tobj.lx=-289.865 tobj.ly=-561.65 tobj.i3d=0
+tobj = new CellBuildSection("pn",45, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(69)
+  tobj.position(-330,-555,-345,-540) tobj.lx=-388.784 tobj.ly=-547.05 tobj.i3d=0
+tobj = new CellBuildSection("pn",46, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(70)
+  tobj.position(-345,-540,-330,-525) tobj.lx=-288.243 tobj.ly=-529.22 tobj.i3d=0
+tobj = new CellBuildSection("pn",47, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(71)
+  tobj.position(-330,-525,-345,-510) tobj.lx=-380.676 tobj.ly=-516.24 tobj.i3d=0
+tobj = new CellBuildSection("N",5, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(72)
+  tobj.position(-345,-510,-345,-495) tobj.lx=-296.351 tobj.ly=-498.4 tobj.i3d=0
+tobj = new CellBuildSection("pn",48, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(73)
+  tobj.position(-345,-495,-330,-480) tobj.lx=-385.541 tobj.ly=-480.568 tobj.i3d=0
+}
+{
+tobj = new CellBuildSection("pn",49, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(74)
+  tobj.position(-330,-480,-345,-465) tobj.lx=-286.622 tobj.ly=-464.351 tobj.i3d=0
+tobj = new CellBuildSection("pn",50, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(75)
+  tobj.position(-345,-465,-330,-450) tobj.lx=-387.162 tobj.ly=-449.757 tobj.i3d=0
+tobj = new CellBuildSection("pn",51, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(76)
+  tobj.position(-330,-450,-345,-435) tobj.lx=-289.865 tobj.ly=-436.784 tobj.i3d=0
+tobj = new CellBuildSection("jp",12, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(77)
+  tobj.position(-345,-435,-345,-420) tobj.lx=-388.784 tobj.ly=-422.189 tobj.i3d=0
+tobj = new CellBuildSection("In",6, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(78)
+  tobj.position(-345,-420,-345,-360) tobj.lx=-382.297 tobj.ly=-390.162 tobj.i3d=0
+tobj = new CellBuildSection("jp",13, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(79)
+  tobj.position(-345,-360,-345,-345) tobj.lx=-380.676 tobj.ly=-351.243 tobj.i3d=0
+tobj = new CellBuildSection("pn",52, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(80)
+  tobj.position(-345,-345,-330,-330) tobj.lx=-291.486 tobj.ly=-335.027 tobj.i3d=0
+tobj = new CellBuildSection("pn",53, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(81)
+  tobj.position(-330,-330,-345,-315) tobj.lx=-387.162 tobj.ly=-320.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",54, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(82)
+  tobj.position(-345,-315,-330,-300) tobj.lx=-291.486 tobj.ly=-302.189 tobj.i3d=0
+tobj = new CellBuildSection("pn",55, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(83)
+  tobj.position(-330,-300,-345,-285) tobj.lx=-388.784 tobj.ly=-292.865 tobj.i3d=0
+tobj = new CellBuildSection("N",6, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(84)
+  tobj.position(-345,-285,-345,-270) tobj.lx=-293.108 tobj.ly=-271.378 tobj.i3d=0
+tobj = new CellBuildSection("pn",56, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(85)
+  tobj.position(-345,-270,-330,-255) tobj.lx=-387.162 tobj.ly=-255.568 tobj.i3d=0
+tobj = new CellBuildSection("pn",57, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(86)
+  tobj.position(-330,-255,-345,-240) tobj.lx=-291.486 tobj.ly=-238.135 tobj.i3d=0
+tobj = new CellBuildSection("pn",58, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(87)
+  tobj.position(-345,-240,-330,-225) tobj.lx=-387.162 tobj.ly=-225.162 tobj.i3d=0
+tobj = new CellBuildSection("pn",59, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(88)
+  tobj.position(-330,-225,-345,-210) tobj.lx=-289.865 tobj.ly=-208.541 tobj.i3d=0
+tobj = new CellBuildSection("jp",14, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(89)
+  tobj.position(-345,-210,-345,-195) tobj.lx=-385.541 tobj.ly=-197.189 tobj.i3d=0
+tobj = new CellBuildSection("In",7, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(90)
+  tobj.position(-345,-195,-345,-135) tobj.lx=-382.297 tobj.ly=-161.514 tobj.i3d=0
+tobj = new CellBuildSection("jp",15, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(91)
+  tobj.position(-345,-135,-345,-120) tobj.lx=-390.405 tobj.ly=-124.216 tobj.i3d=0
+tobj = new CellBuildSection("pn",60, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(92)
+  tobj.position(-345,-120,-330,-105) tobj.lx=-291.486 tobj.ly=-109.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",61, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(93)
+  tobj.position(-330,-105,-345,-90) tobj.lx=-388.784 tobj.ly=-95.027 tobj.i3d=0
+tobj = new CellBuildSection("pn",62, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(94)
+  tobj.position(-345,-90,-330,-75) tobj.lx=-289.865 tobj.ly=-82.054 tobj.i3d=0
+tobj = new CellBuildSection("pn",63, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(95)
+  tobj.position(-330,-75,-345,-60) tobj.lx=-388.784 tobj.ly=-65.838 tobj.i3d=0
+tobj = new CellBuildSection("N",7, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(96)
+  tobj.position(-345,-60,-345,-45) tobj.lx=-294.73 tobj.ly=-49.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",64, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(97)
+  tobj.position(-345,-45,-330,-30) tobj.lx=-388.784 tobj.ly=-30.162 tobj.i3d=0
+tobj = new CellBuildSection("pn",65, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(98)
+  tobj.position(-330,-30,-345,-15) tobj.lx=-289.865 tobj.ly=-13.946 tobj.i3d=0
+}
+{
+tobj = new CellBuildSection("pn",66, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(99)
+  tobj.position(-345,-15,-330,0) tobj.lx=-388.784 tobj.ly=-2.595 tobj.i3d=0
+tobj = new CellBuildSection("pn",67, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(100)
+  tobj.position(-330,0,-345,15) tobj.lx=-291.486 tobj.ly=12 tobj.i3d=0
+tobj = new CellBuildSection("jp",16, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(101)
+  tobj.position(-345,15,-345,30) tobj.lx=-387.162 tobj.ly=23.351 tobj.i3d=0
+tobj = new CellBuildSection("In",8, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(102)
+  tobj.position(-345,30,-345,90) tobj.lx=-390.405 tobj.ly=63.892 tobj.i3d=0
+tobj = new CellBuildSection("jp",17, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(103)
+  tobj.position(-345,90,-345,105) tobj.lx=-392.027 tobj.ly=97.946 tobj.i3d=0
+tobj = new CellBuildSection("pn",68, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(104)
+  tobj.position(-345,105,-330,120) tobj.lx=-288.243 tobj.ly=110.919 tobj.i3d=0
+tobj = new CellBuildSection("pn",69, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(105)
+  tobj.position(-330,120,-345,135) tobj.lx=-392.027 tobj.ly=127.135 tobj.i3d=0
+tobj = new CellBuildSection("pn",70, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(106)
+  tobj.position(-345,135,-330,150) tobj.lx=-288.243 tobj.ly=144.973 tobj.i3d=0
+tobj = new CellBuildSection("pn",71, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(107)
+  tobj.position(-330,150,-345,165) tobj.lx=-388.784 tobj.ly=159.568 tobj.i3d=0
+tobj = new CellBuildSection("N",8, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(108)
+  tobj.position(-345,165,-345,180) tobj.lx=-297.973 tobj.ly=175.784 tobj.i3d=0
+tobj = new CellBuildSection("pn",72, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(109)
+  tobj.position(-345,180,-330,195) tobj.lx=-390.405 tobj.ly=193.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",73, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(110)
+  tobj.position(-330,195,-345,210) tobj.lx=-285 tobj.ly=209.838 tobj.i3d=0
+tobj = new CellBuildSection("pn",74, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(111)
+  tobj.position(-345,210,-330,225) tobj.lx=-392.027 tobj.ly=226.054 tobj.i3d=0
+tobj = new CellBuildSection("pn",75, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(112)
+  tobj.position(-330,225,-345,240) tobj.lx=-286.622 tobj.ly=245.514 tobj.i3d=0
+tobj = new CellBuildSection("jp",18, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(113)
+  tobj.position(-345,240,-345,255) tobj.lx=-386.757 tobj.ly=256.054 tobj.i3d=0
+tobj = new CellBuildSection("In",9, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(114)
+  tobj.position(-345,255,-300,285) tobj.lx=-346.216 tobj.ly=282 tobj.i3d=0
+tobj = new CellBuildSection("jp",19, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(115)
+  tobj.position(-300,285,-285,285) tobj.lx=-318.649 tobj.ly=314.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",76, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(116)
+  tobj.position(-285,285,-270,270) tobj.lx=-210.405 tobj.ly=209.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",77, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(117)
+  tobj.position(-270,270,-255,285) tobj.lx=-255.405 tobj.ly=304.703 tobj.i3d=0
+tobj = new CellBuildSection("pn",78, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(118)
+  tobj.position(-255,285,-240,270) tobj.lx=-244.054 tobj.ly=346.865 tobj.i3d=0
+tobj = new CellBuildSection("pn",79, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(119)
+  tobj.position(-240,270,-225,285) tobj.lx=-197.027 tobj.ly=262.541 tobj.i3d=0
+tobj = new CellBuildSection("N",9, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(120)
+  tobj.position(-225,285,-210,285) tobj.lx=-193.784 tobj.ly=314.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",80, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(121)
+  tobj.position(-210,285,-105,285) tobj.lx=-83.108 tobj.ly=301.459 tobj.i3d=0
+tobj = new CellBuildSection("pn",81, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(122)
+  tobj.position(-105,285,-75,255) tobj.lx=-107.838 tobj.ly=268.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",82, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(123)
+  tobj.position(-75,255,-60,240) tobj.lx=-26.757 tobj.ly=255.649 tobj.i3d=0
+}
+{
+tobj = new CellBuildSection("pn",83, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(124)
+  tobj.position(-60,240,-75,225) tobj.lx=-109.459 tobj.ly=237.811 tobj.i3d=0
+tobj = new CellBuildSection("jp",20, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(125)
+  tobj.position(-75,225,-75,210) tobj.lx=-38.108 tobj.ly=221.595 tobj.i3d=0
+tobj = new CellBuildSection("In",10, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(126)
+  tobj.position(-75,210,-75,150) tobj.lx=-101.351 tobj.ly=188.351 tobj.i3d=0
+tobj = new CellBuildSection("jp",21, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(127)
+  tobj.position(-75,150,-75,135) tobj.lx=-111.081 tobj.ly=149.027 tobj.i3d=0
+tobj = new CellBuildSection("pn",84, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(128)
+  tobj.position(-75,135,-60,120) tobj.lx=-23.514 tobj.ly=135.243 tobj.i3d=0
+tobj = new CellBuildSection("pn",85, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(129)
+  tobj.position(-60,120,-75,105) tobj.lx=-114.324 tobj.ly=121.459 tobj.i3d=0
+tobj = new CellBuildSection("pn",86, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(130)
+  tobj.position(-75,105,-60,90) tobj.lx=-21.892 tobj.ly=104.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",87, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(131)
+  tobj.position(-60,90,-75,75) tobj.lx=-115.946 tobj.ly=89.027 tobj.i3d=0
+tobj = new CellBuildSection("N",10, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(132)
+  tobj.position(-75,75,-75,60) tobj.lx=-38.919 tobj.ly=70.378 tobj.i3d=0
+tobj = new CellBuildSection("pn",88, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(133)
+  tobj.position(-75,60,-60,45) tobj.lx=-117.568 tobj.ly=54.568 tobj.i3d=0
+tobj = new CellBuildSection("pn",89, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(134)
+  tobj.position(-60,45,-75,30) tobj.lx=-17.027 tobj.ly=39.973 tobj.i3d=0
+tobj = new CellBuildSection("pn",90, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(135)
+  tobj.position(-75,30,-60,15) tobj.lx=-122.432 tobj.ly=23.757 tobj.i3d=0
+tobj = new CellBuildSection("pn",91, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(136)
+  tobj.position(-60,15,-75,0) tobj.lx=-13.784 tobj.ly=5.919 tobj.i3d=0
+tobj = new CellBuildSection("jp",22, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(137)
+  tobj.position(-75,0,-75,-15) tobj.lx=-114.324 tobj.ly=-5.432 tobj.i3d=0
+tobj = new CellBuildSection("In",11, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(138)
+  tobj.position(-75,-15,-75,-75) tobj.lx=-23.514 tobj.ly=-39.486 tobj.i3d=0
+tobj = new CellBuildSection("jp",23, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(139)
+  tobj.position(-75,-75,-75,-90) tobj.lx=-19.865 tobj.ly=-80.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",92, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(140)
+  tobj.position(-75,-90,-60,-105) tobj.lx=-122.027 tobj.ly=-96.649 tobj.i3d=0
+tobj = new CellBuildSection("pn",93, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(141)
+  tobj.position(-60,-105,-75,-120) tobj.lx=-11.757 tobj.ly=-109.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",94, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(142)
+  tobj.position(-75,-120,-60,-135) tobj.lx=-122.432 tobj.ly=-126.649 tobj.i3d=0
+tobj = new CellBuildSection("pn",95, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(143)
+  tobj.position(-60,-135,-75,-150) tobj.lx=-11.757 tobj.ly=-140.432 tobj.i3d=0
+tobj = new CellBuildSection("N",11, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(144)
+  tobj.position(-75,-150,-75,-165) tobj.lx=-110.676 tobj.ly=-153.405 tobj.i3d=0
+tobj = new CellBuildSection("pn",96, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(145)
+  tobj.position(-75,-165,-60,-180) tobj.lx=-11.757 tobj.ly=-168 tobj.i3d=0
+tobj = new CellBuildSection("pn",97, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(146)
+  tobj.position(-60,-180,-75,-195) tobj.lx=-120.811 tobj.ly=-183.811 tobj.i3d=0
+tobj = new CellBuildSection("pn",98, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(147)
+  tobj.position(-75,-195,-60,-210) tobj.lx=-11.757 tobj.ly=-195.568 tobj.i3d=0
+tobj = new CellBuildSection("pn",99, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(148)
+  tobj.position(-60,-210,-75,-225) tobj.lx=-120.811 tobj.ly=-214.622 tobj.i3d=0
+}
+{
+tobj = new CellBuildSection("jp",24, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(149)
+  tobj.position(-75,-225,-75,-240) tobj.lx=-22.703 tobj.ly=-229.622 tobj.i3d=0
+tobj = new CellBuildSection("In",12, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(150)
+  tobj.position(-75,-240,-75,-300) tobj.lx=-21.081 tobj.ly=-266.919 tobj.i3d=0
+tobj = new CellBuildSection("jp",25, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(151)
+  tobj.position(-75,-300,-75,-315) tobj.lx=-23.514 tobj.ly=-301.784 tobj.i3d=0
+tobj = new CellBuildSection("pn",100, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(152)
+  tobj.position(-75,-315,-60,-330) tobj.lx=-122.432 tobj.ly=-318 tobj.i3d=0
+tobj = new CellBuildSection("pn",101, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(153)
+  tobj.position(-60,-330,-75,-345) tobj.lx=-18.649 tobj.ly=-335.838 tobj.i3d=0
+tobj = new CellBuildSection("pn",102, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(154)
+  tobj.position(-75,-345,-60,-360) tobj.lx=-120.811 tobj.ly=-350.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",103, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(155)
+  tobj.position(-60,-360,-75,-375) tobj.lx=-19.459 tobj.ly=-362.595 tobj.i3d=0
+tobj = new CellBuildSection("N",12, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(156)
+  tobj.position(-75,-375,-75,-390) tobj.lx=-110.27 tobj.ly=-377.189 tobj.i3d=0
+tobj = new CellBuildSection("pn",104, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(157)
+  tobj.position(-75,-390,-60,-405) tobj.lx=-17.838 tobj.ly=-388.541 tobj.i3d=0
+tobj = new CellBuildSection("pn",105, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(158)
+  tobj.position(-60,-405,-75,-420) tobj.lx=-120 tobj.ly=-405.973 tobj.i3d=0
+tobj = new CellBuildSection("pn",106, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(159)
+  tobj.position(-75,-420,-60,-435) tobj.lx=-20.27 tobj.ly=-418.946 tobj.i3d=0
+tobj = new CellBuildSection("pn",107, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(160)
+  tobj.position(-60,-435,-75,-450) tobj.lx=-121.622 tobj.ly=-433.541 tobj.i3d=0
+tobj = new CellBuildSection("jp",26, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(161)
+  tobj.position(-75,-450,-75,-465) tobj.lx=-17.838 tobj.ly=-453.405 tobj.i3d=0
+tobj = new CellBuildSection("In",13, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(162)
+  tobj.position(-75,-465,-75,-525) tobj.lx=-27.568 tobj.ly=-492.32 tobj.i3d=0
+tobj = new CellBuildSection("jp",27, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(163)
+  tobj.position(-75,-525,-75,-540) tobj.lx=-25.946 tobj.ly=-525.57 tobj.i3d=0
+tobj = new CellBuildSection("pn",108, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(164)
+  tobj.position(-75,-540,-60,-555) tobj.lx=-120 tobj.ly=-549.89 tobj.i3d=0
+tobj = new CellBuildSection("pn",109, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(165)
+  tobj.position(-60,-555,-75,-570) tobj.lx=-21.081 tobj.ly=-559.62 tobj.i3d=0
+tobj = new CellBuildSection("pn",110, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(166)
+  tobj.position(-75,-570,-60,-585) tobj.lx=-120 tobj.ly=-579.08 tobj.i3d=0
+tobj = new CellBuildSection("pn",111, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(167)
+  tobj.position(-60,-585,-75,-600) tobj.lx=-19.459 tobj.ly=-588.81 tobj.i3d=0
+tobj = new CellBuildSection("N",13, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(168)
+  tobj.position(-75,-600,-75,-615) tobj.lx=-118.378 tobj.ly=-603.81 tobj.i3d=0
+tobj = new CellBuildSection("pn",112, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(169)
+  tobj.position(-75,-615,-60,-630) tobj.lx=-19.459 tobj.ly=-613.54 tobj.i3d=0
+tobj = new CellBuildSection("pn",113, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(170)
+  tobj.position(-60,-630,-75,-645) tobj.lx=-116.757 tobj.ly=-633 tobj.i3d=0
+tobj = new CellBuildSection("pn",114, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(171)
+  tobj.position(-75,-645,-60,-660) tobj.lx=-22.703 tobj.ly=-645.97 tobj.i3d=0
+tobj = new CellBuildSection("pn",115, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(172)
+  tobj.position(-60,-660,-75,-675) tobj.lx=-117.162 tobj.ly=-660.16 tobj.i3d=0
+tobj = new CellBuildSection("jp",28, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(173)
+  tobj.position(-75,-675,-75,-690) tobj.lx=-109.054 tobj.ly=-692.6 tobj.i3d=0
+}
+{
+tobj = new CellBuildSection("In",14, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(174)
+  tobj.position(-75,-690,180,-690) tobj.lx=53.514 tobj.ly=-667.87 tobj.i3d=0
+tobj = new CellBuildSection("jp",29, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(175)
+  tobj.position(180,-690,180,-675) tobj.lx=220.541 tobj.ly=-699.08 tobj.i3d=0
+tobj = new CellBuildSection("pn",116, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(176)
+  tobj.position(180,-675,195,-660) tobj.lx=235.135 tobj.ly=-668.27 tobj.i3d=0
+tobj = new CellBuildSection("pn",117, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(177)
+  tobj.position(195,-660,180,-645) tobj.lx=134.595 tobj.ly=-650.43 tobj.i3d=0
+tobj = new CellBuildSection("pn",118, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(178)
+  tobj.position(180,-645,195,-630) tobj.lx=231.892 tobj.ly=-634.22 tobj.i3d=0
+tobj = new CellBuildSection("pn",119, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(179)
+  tobj.position(195,-630,180,-615) tobj.lx=136.216 tobj.ly=-621.24 tobj.i3d=0
+tobj = new CellBuildSection("N",14, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(180)
+  tobj.position(180,-615,180,-600) tobj.lx=225.405 tobj.ly=-603.4 tobj.i3d=0
+tobj = new CellBuildSection("pn",120, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(181)
+  tobj.position(180,-600,195,-585) tobj.lx=136.216 tobj.ly=-586.38 tobj.i3d=0
+tobj = new CellBuildSection("pn",121, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(182)
+  tobj.position(195,-585,180,-570) tobj.lx=235.135 tobj.ly=-570.16 tobj.i3d=0
+tobj = new CellBuildSection("pn",122, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(183)
+  tobj.position(180,-570,195,-555) tobj.lx=137.838 tobj.ly=-553.95 tobj.i3d=0
+tobj = new CellBuildSection("pn",123, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(184)
+  tobj.position(195,-555,180,-540) tobj.lx=235.135 tobj.ly=-539.35 tobj.i3d=0
+tobj = new CellBuildSection("jp",30, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(185)
+  tobj.position(180,-540,180,-525) tobj.lx=145.946 tobj.ly=-525.57 tobj.i3d=0
+tobj = new CellBuildSection("In",15, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(186)
+  tobj.position(180,-525,180,-465) tobj.lx=145.946 tobj.ly=-495.16 tobj.i3d=0
+tobj = new CellBuildSection("jp",31, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(187)
+  tobj.position(180,-465,180,-450) tobj.lx=136.216 tobj.ly=-454.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",124, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(188)
+  tobj.position(180,-450,195,-435) tobj.lx=235.135 tobj.ly=-441.649 tobj.i3d=0
+tobj = new CellBuildSection("pn",125, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(189)
+  tobj.position(195,-435,180,-420) tobj.lx=136.216 tobj.ly=-427.054 tobj.i3d=0
+tobj = new CellBuildSection("pn",126, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(190)
+  tobj.position(180,-420,195,-405) tobj.lx=236.757 tobj.ly=-409.216 tobj.i3d=0
+tobj = new CellBuildSection("pn",127, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(191)
+  tobj.position(195,-405,180,-390) tobj.lx=144.324 tobj.ly=-396.243 tobj.i3d=0
+tobj = new CellBuildSection("N",15, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(192)
+  tobj.position(180,-390,180,-375) tobj.lx=228.649 tobj.ly=-378.405 tobj.i3d=0
+tobj = new CellBuildSection("pn",128, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(193)
+  tobj.position(180,-375,195,-360) tobj.lx=139.459 tobj.ly=-360.568 tobj.i3d=0
+tobj = new CellBuildSection("pn",129, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(194)
+  tobj.position(195,-360,180,-345) tobj.lx=238.378 tobj.ly=-344.351 tobj.i3d=0
+tobj = new CellBuildSection("pn",130, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(195)
+  tobj.position(180,-345,195,-330) tobj.lx=137.838 tobj.ly=-329.757 tobj.i3d=0
+tobj = new CellBuildSection("pn",131, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(196)
+  tobj.position(195,-330,180,-315) tobj.lx=235.135 tobj.ly=-316.784 tobj.i3d=0
+tobj = new CellBuildSection("jp",32, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(197)
+  tobj.position(180,-315,180,-300) tobj.lx=136.216 tobj.ly=-302.189 tobj.i3d=0
+tobj = new CellBuildSection("In",16, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(198)
+  tobj.position(180,-300,180,-240) tobj.lx=142.703 tobj.ly=-270.162 tobj.i3d=0
+}
+{
+tobj = new CellBuildSection("jp",33, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(199)
+  tobj.position(180,-240,180,-225) tobj.lx=144.324 tobj.ly=-231.243 tobj.i3d=0
+tobj = new CellBuildSection("pn",132, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(200)
+  tobj.position(180,-225,195,-210) tobj.lx=233.514 tobj.ly=-215.027 tobj.i3d=0
+tobj = new CellBuildSection("pn",133, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(201)
+  tobj.position(195,-210,180,-195) tobj.lx=137.838 tobj.ly=-200.432 tobj.i3d=0
+tobj = new CellBuildSection("pn",134, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(202)
+  tobj.position(180,-195,195,-180) tobj.lx=233.514 tobj.ly=-182.189 tobj.i3d=0
+tobj = new CellBuildSection("pn",135, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(203)
+  tobj.position(195,-180,180,-165) tobj.lx=136.216 tobj.ly=-172.865 tobj.i3d=0
+tobj = new CellBuildSection("N",16, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(204)
+  tobj.position(180,-165,180,-150) tobj.lx=231.892 tobj.ly=-151.378 tobj.i3d=0
+tobj = new CellBuildSection("pn",136, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(205)
+  tobj.position(180,-150,195,-135) tobj.lx=137.838 tobj.ly=-135.568 tobj.i3d=0
+tobj = new CellBuildSection("pn",137, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(206)
+  tobj.position(195,-135,180,-120) tobj.lx=233.514 tobj.ly=-118.135 tobj.i3d=0
+tobj = new CellBuildSection("pn",138, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(207)
+  tobj.position(180,-120,195,-105) tobj.lx=137.838 tobj.ly=-105.162 tobj.i3d=0
+tobj = new CellBuildSection("pn",139, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(208)
+  tobj.position(195,-105,180,-90) tobj.lx=235.135 tobj.ly=-88.541 tobj.i3d=0
+tobj = new CellBuildSection("jp",34, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(209)
+  tobj.position(180,-90,180,-75) tobj.lx=139.459 tobj.ly=-77.189 tobj.i3d=0
+tobj = new CellBuildSection("In",17, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(210)
+  tobj.position(180,-75,180,-15) tobj.lx=142.703 tobj.ly=-41.514 tobj.i3d=0
+tobj = new CellBuildSection("jp",35, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(211)
+  tobj.position(180,-15,180,0) tobj.lx=134.595 tobj.ly=-4.216 tobj.i3d=0
+tobj = new CellBuildSection("pn",140, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(212)
+  tobj.position(180,0,195,15) tobj.lx=233.514 tobj.ly=10.378 tobj.i3d=0
+tobj = new CellBuildSection("pn",141, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(213)
+  tobj.position(195,15,180,30) tobj.lx=136.216 tobj.ly=24.973 tobj.i3d=0
+tobj = new CellBuildSection("pn",142, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(214)
+  tobj.position(180,30,195,45) tobj.lx=235.135 tobj.ly=37.946 tobj.i3d=0
+tobj = new CellBuildSection("pn",143, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(215)
+  tobj.position(195,45,180,60) tobj.lx=136.216 tobj.ly=54.162 tobj.i3d=0
+tobj = new CellBuildSection("N",17, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(216)
+  tobj.position(180,60,180,75) tobj.lx=230.27 tobj.ly=70.378 tobj.i3d=0
+tobj = new CellBuildSection("pn",144, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(217)
+  tobj.position(180,75,195,90) tobj.lx=136.216 tobj.ly=89.838 tobj.i3d=0
+tobj = new CellBuildSection("pn",145, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(218)
+  tobj.position(195,90,180,105) tobj.lx=235.135 tobj.ly=106.054 tobj.i3d=0
+tobj = new CellBuildSection("pn",146, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(219)
+  tobj.position(180,105,195,120) tobj.lx=136.216 tobj.ly=117.405 tobj.i3d=0
+tobj = new CellBuildSection("pn",147, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(220)
+  tobj.position(195,120,180,135) tobj.lx=233.514 tobj.ly=132 tobj.i3d=0
+tobj = new CellBuildSection("jp",36, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(221)
+  tobj.position(180,135,180,150) tobj.lx=137.838 tobj.ly=143.351 tobj.i3d=0
+tobj = new CellBuildSection("In",18, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(222)
+  tobj.position(180,150,180,210) tobj.lx=134.595 tobj.ly=183.892 tobj.i3d=0
+tobj = new CellBuildSection("jp",37, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(223)
+  tobj.position(180,210,180,225) tobj.lx=132.973 tobj.ly=217.946 tobj.i3d=0
+}
+{
+tobj = new CellBuildSection("pn",148, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(224)
+  tobj.position(180,225,195,240) tobj.lx=236.757 tobj.ly=230.919 tobj.i3d=0
+tobj = new CellBuildSection("pn",149, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(225)
+  tobj.position(195,240,180,255) tobj.lx=132.973 tobj.ly=247.135 tobj.i3d=0
+tobj = new CellBuildSection("pn",150, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(226)
+  tobj.position(180,255,195,270) tobj.lx=236.757 tobj.ly=264.973 tobj.i3d=0
+tobj = new CellBuildSection("pn",151, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(227)
+  tobj.position(195,270,180,285) tobj.lx=136.216 tobj.ly=279.568 tobj.i3d=0
+tobj = new CellBuildSection("N",18, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(228)
+  tobj.position(180,285,180,300) tobj.lx=231.098 tobj.ly=296.096 tobj.i3d=0
+tobj = new CellBuildSection("pn",152, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(229)
+  tobj.position(180,300,195,315) tobj.lx=134.595 tobj.ly=313.622 tobj.i3d=0
+tobj = new CellBuildSection("pn",153, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(230)
+  tobj.position(195,315,180,330) tobj.lx=239.19 tobj.ly=327.452 tobj.i3d=0
+tobj = new CellBuildSection("pn",154, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(231)
+  tobj.position(180,330,195,345) tobj.lx=132.973 tobj.ly=346.054 tobj.i3d=0
+tobj = new CellBuildSection("pn",155, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(232)
+  tobj.position(195,345,180,360) tobj.lx=239.19 tobj.ly=352.739 tobj.i3d=0
+tobj = new CellBuildSection("jp",38, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(233)
+  tobj.position(180,360,180,375) tobj.lx=141.076 tobj.ly=370.946 tobj.i3d=0
+tobj = new CellBuildSection("In",19, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(234)
+  tobj.position(180,375,225,405) tobj.lx=170.409 tobj.ly=401.291 tobj.i3d=0
+tobj = new CellBuildSection("jp",39, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(235)
+  tobj.position(225,405,240,405) tobj.lx=208.845 tobj.ly=419.497 tobj.i3d=0
+tobj = new CellBuildSection("pn",156, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(236)
+  tobj.position(240,405,255,390) tobj.lx=230.086 tobj.ly=380.049 tobj.i3d=0
+tobj = new CellBuildSection("pn",157, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(237)
+  tobj.position(255,390,270,405) tobj.lx=266.5 tobj.ly=422.532 tobj.i3d=0
+tobj = new CellBuildSection("pn",158, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(238)
+  tobj.position(270,405,285,390) tobj.lx=289.764 tobj.ly=381.061 tobj.i3d=0
+tobj = new CellBuildSection("pn",159, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(239)
+  tobj.position(285,390,300,405) tobj.lx=280.661 tobj.ly=443.773 tobj.i3d=0
+tobj = new CellBuildSection("N",19, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(240)
+  tobj.position(300,405,315,405) tobj.lx=339.327 tobj.ly=405.337 tobj.i3d=0
+tobj = new CellBuildSection("Syn",0, 0, tobj, 1) slist.append(tobj)
+tobj.parent=slist.object(241)
+  tobj.position(315,405,315,525) tobj.lx=318.372 tobj.ly=575.572 tobj.i3d=0
+all_init()
+}
+for i=0, slist.count-1 {slist.object(i).rdses()}
+{object_pop()}
+{
+}
+{object_push(subsets)}
+{first = 0}
+{ tobj = snlist.object(0)}
+{tobj = new SNList("Nodes") snlist.append(tobj)}
+for i=0,19 tobj.add(bild.topol.slist.object(fscan()))
+13
+25
+37
+49
+61
+73
+85
+97
+109
+121
+133
+145
+157
+169
+181
+193
+205
+217
+229
+241
+{tobj = new SNList("Paranodes_1st") snlist.append(tobj)}
+for i=0,39 tobj.add(bild.topol.slist.object(fscan()))
+2
+12
+14
+24
+26
+36
+38
+48
+50
+60
+62
+72
+74
+84
+86
+96
+98
+108
+110
+120
+122
+132
+134
+144
+146
+156
+158
+168
+170
+180
+182
+192
+194
+204
+206
+216
+218
+228
+230
+240
+{tobj = new SNList("Paranodes_2nd") snlist.append(tobj)}
+for i=0,39 tobj.add(bild.topol.slist.object(fscan()))
+3
+11
+15
+23
+27
+35
+39
+47
+51
+59
+63
+71
+75
+83
+87
+95
+99
+107
+111
+119
+123
+131
+135
+143
+147
+155
+159
+167
+171
+179
+183
+191
+195
+203
+207
+215
+219
+227
+231
+239
+{tobj = new SNList("Paranodes_3rd") snlist.append(tobj)}
+for i=0,39 tobj.add(bild.topol.slist.object(fscan()))
+4
+10
+16
+22
+28
+34
+40
+46
+52
+58
+64
+70
+76
+82
+88
+94
+100
+106
+112
+118
+124
+130
+136
+142
+148
+154
+160
+166
+172
+178
+184
+190
+196
+202
+208
+214
+220
+226
+232
+238
+{tobj = new SNList("Paranodes_4th") snlist.append(tobj)}
+for i=0,39 tobj.add(bild.topol.slist.object(fscan()))
+5
+9
+17
+21
+29
+33
+41
+45
+53
+57
+65
+69
+77
+81
+89
+93
+101
+105
+113
+117
+125
+129
+137
+141
+149
+153
+161
+165
+173
+177
+185
+189
+197
+201
+209
+213
+221
+225
+233
+237
+{tobj = new SNList("Juxtaparanodes") snlist.append(tobj)}
+for i=0,39 tobj.add(bild.topol.slist.object(fscan()))
+6
+8
+18
+20
+30
+32
+42
+44
+54
+56
+66
+68
+78
+80
+90
+92
+102
+104
+114
+116
+126
+128
+138
+140
+150
+152
+162
+164
+174
+176
+186
+188
+198
+200
+210
+212
+222
+224
+234
+236
+{tobj = new SNList("Internodes") snlist.append(tobj)}
+for i=0,19 tobj.add(bild.topol.slist.object(fscan()))
+7
+19
+31
+43
+55
+67
+79
+91
+103
+115
+127
+139
+151
+163
+175
+187
+199
+211
+223
+235
+{tobj = new SNList("Synapses") snlist.append(tobj)}
+for i=0,0 tobj.add(bild.topol.slist.object(fscan()))
+242
+{consist()}
+{object_pop()}
+{
+}
+{object_push(geom)}
+{
+first = 0
+tobj = new GeoSpec(2)
+tobj.value = 1.25
+bild.subsets.snlist.object(1).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 0.55
+bild.subsets.snlist.object(1).geo.append(tobj)
+tobj = new GeoSpec(7)
+tobj.value = 0.01
+bild.subsets.snlist.object(1).geo.append(tobj)
+tobj = new GeoSpec(2)
+tobj.value = 0.542
+bild.subsets.snlist.object(2).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 0.55
+bild.subsets.snlist.object(2).geo.append(tobj)
+tobj = new GeoSpec(7)
+tobj.value = 0.01
+bild.subsets.snlist.object(2).geo.append(tobj)
+tobj = new GeoSpec(2)
+tobj.value = 0.542
+bild.subsets.snlist.object(3).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 0.55
+bild.subsets.snlist.object(3).geo.append(tobj)
+tobj = new GeoSpec(7)
+tobj.value = 0.01
+bild.subsets.snlist.object(3).geo.append(tobj)
+tobj = new GeoSpec(2)
+tobj.value = 0.542
+bild.subsets.snlist.object(4).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 0.55
+bild.subsets.snlist.object(4).geo.append(tobj)
+tobj = new GeoSpec(7)
+tobj.value = 0.01
+bild.subsets.snlist.object(4).geo.append(tobj)
+tobj = new GeoSpec(2)
+tobj.value = 0.542
+bild.subsets.snlist.object(5).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 0.55
+bild.subsets.snlist.object(5).geo.append(tobj)
+tobj = new GeoSpec(7)
+tobj.value = 0.01
+bild.subsets.snlist.object(5).geo.append(tobj)
+tobj = new GeoSpec(2)
+tobj.value = 19.2
+bild.subsets.snlist.object(6).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 0.55
+bild.subsets.snlist.object(6).geo.append(tobj)
+tobj = new GeoSpec(7)
+tobj.value = 0.01
+bild.subsets.snlist.object(6).geo.append(tobj)
+tobj = new GeoSpec(2)
+tobj.value = 95.8
+bild.subsets.snlist.object(7).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 0.55
+bild.subsets.snlist.object(7).geo.append(tobj)
+tobj = new GeoSpec(7)
+tobj.value = 0.01
+bild.subsets.snlist.object(7).geo.append(tobj)
+tobj = new GeoSpec(2)
+tobj.value = 1
+bild.subsets.snlist.object(8).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 0.55
+bild.subsets.snlist.object(8).geo.append(tobj)
+}
+{
+tobj = new GeoSpec(7)
+tobj.value = 0.1
+bild.subsets.snlist.object(8).geo.append(tobj)
+tobj = new GeoSpec(2)
+tobj.value = 10
+bild.topol.slist.object(0).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 10
+bild.topol.slist.object(0).geo.append(tobj)
+tobj = new GeoSpec(7)
+tobj.value = 0.1
+bild.topol.slist.object(0).geo.append(tobj)
+tobj = new GeoSpec(2)
+tobj.value = 1
+bild.topol.slist.object(1).geo.append(tobj)
+tobj = new GeoSpec(3)
+tobj.value = 0.55
+bild.topol.slist.object(1).geo.append(tobj)
+tobj = new GeoSpec(7)
+tobj.value = 0.1
+bild.topol.slist.object(1).geo.append(tobj)
+set_default()
+}
+{object_pop()}
+{
+}
+{object_push(memb)}
+{first=0}
+{
+tobj = new FakeMechStan(0)
+tobj.value = 70
+tobj.set_default()
+tobj = new MStanWrap(tobj, 0)
+bild.subsets.snlist.object(0).ml.append(tobj)
+}
+{
+tobj = new FakeMechStan(1)
+tobj.value = 1
+tobj.set_default()
+tobj = new MStanWrap(tobj, 0)
+bild.subsets.snlist.object(0).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 2.0185e+06, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 1e+09, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(1).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 0.0339, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(1).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Ks")
+tobj.set("pmax_Ks", 8.33e-05, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(1).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.156, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(1).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 0.000279, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(1).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 4.037e+06, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 8.41e-05, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0.841, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(2).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.0005, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(2).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 3.39e-05, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(2).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(2).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 4.037e+06, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 4.28e-05, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0.4278, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(3).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.0005, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(3).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 3.39e-05, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(3).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(3).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 4.037e+06, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 2.9e-05, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0.29, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(4).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.0005, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(4).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 3.39e-05, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(4).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(4).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 4.037e+06, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 2.21e-05, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0.2212, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(5).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.0005, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(5).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 3.39e-05, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(5).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(5).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 195500, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 1.91e-05, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0.1906, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(6).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.005, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(6).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 0.00279, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(6).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 0.000339, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(6).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 195500, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 1.91e-05, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0.1906, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(7).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.005, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(7).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 0.000339, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(7).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 0.00093, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(7).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 1e+09, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 1e+09, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(8).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 0.000339, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(8).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 2.79e-05, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(8).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.005, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.subsets.snlist.object(8).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 1e+09, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 1e+09, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.topol.slist.object(0).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 0.00339, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.topol.slist.object(0).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 0.000279, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.topol.slist.object(0).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.005, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.topol.slist.object(0).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("extracellular")
+tobj.set("xraxial", 1e+09, 0)
+tobj.set("xraxial", 1e+09, 1)
+tobj.set("xg", 1e+09, 0)
+tobj.set("xg", 1e+09, 1)
+tobj.set("xc", 0, 0)
+tobj.set("xc", 0, 1)
+tobj.set("e_extracellular", 0, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.topol.slist.object(1).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Nav")
+tobj.set("pmax_Nav", 0.000339, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.topol.slist.object(1).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("Kf")
+tobj.set("pmax_Kf", 2.79e-05, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.topol.slist.object(1).ml.append(tobj)
+}
+{
+tobj = new MechanismStandard("pas")
+tobj.set("g_pas", 0.005, 0)
+tobj.set("e_pas", -75, 0)
+tobj = new MStanWrap(tobj, 1)
+bild.topol.slist.object(1).ml.append(tobj)
+}
+{object_pop()}
+{
+}
+{object_push(manage)}
+{
+first = 0
+classname = "Cell"
+etop=1 esub=1 egeom=1 emem=1
+itop=1 isub=0 igeom=0 imem=0
+bild.topol.names_off = 0
+bild.topol.circles_off = 0
+output_index = 0  output_x = 1
+thresh = 10
+}
+{object_pop()}
+{
+cexport()
+}
+{object_pop()}
+{
+save_window_=ocbox_.gtopol
+save_window_.size(-200,200,-150,150)
+scene_vector_[2] = save_window_
+ocbox_.gtopol = save_window_
+save_window_.save_name("ocbox_.gtopol")
+}
+{
+ocbox_.map("CellBuild[0]", 0, 77, 759, 719)
+}
+objref ocbox_
+//End CellBuild[0]
+
+{WindowMenu[0].ses_gid(0, 0, 1, "Jerome Channels Group")}
+
+//Begin PointProcessManager
+{
+load_file("pointman.hoc")
+}
+{
+soma ocbox_ = new PointProcessManager(0)
+}
+{object_push(ocbox_)}
+{
+mt.select("IClamp") i = mt.selected()
+ms[i] = new MechanismStandard("IClamp")
+ms[i].set("del", 5, 0)
+ms[i].set("dur", 0.1, 0)
+ms[i].set("amp", 2.5, 0)
+mt.select("IClamp") i = mt.selected() maction(i)
+hoc_ac_ = 0.5
+sec.sec move() d1.flip_to(0)
+}
+{object_pop() doNotify()}
+{
+ocbox_ = ocbox_.v1
+ocbox_.map("PointProcessManager", 732, 22, 211, 254)
+}
+objref ocbox_
+//End PointProcessManager
+
+{WindowMenu[0].ses_gid(0, 0, 1, "Jerome Channels Group")}
+
+//Begin PointProcessManager
+{
+load_file("pointman.hoc")
+}
+{
+N[17] ocbox_ = new PointProcessManager(0)
+}
+{object_push(ocbox_)}
+{
+mt.select("Exp2Syn") i = mt.selected()
+ms[i] = new MechanismStandard("Exp2Syn")
+ms[i].set("tau1", 0.1, 0)
+ms[i].set("tau2", 10, 0)
+ms[i].set("e", 0, 0)
+mt.select("APCount") i = mt.selected()
+ms[i] = new MechanismStandard("APCount")
+ms[i].set("n", 0, 0)
+ms[i].set("thresh", 0, 0)
+ms[i].set("time", 0, 0)
+mt.select("APCount") i = mt.selected() maction(i)
+hoc_ac_ = 0.5
+sec.sec move() d1.flip_to(0)
+}
+{object_pop() doNotify()}
+{
+ocbox_ = ocbox_.v1
+ocbox_.map("PointProcessManager", 522, 22, 208, 298)
+}
+objref ocbox_
+//End PointProcessManager
+
+{WindowMenu[0].ses_gid(0, 0, 1, "Jerome Channels Group")}
+
+//Begin PointProcessManager
+{
+load_file("pointman.hoc")
+}
+{
+N[1] ocbox_ = new PointProcessManager(0)
+}
+{object_push(ocbox_)}
+{
+mt.select("APCount") i = mt.selected()
+ms[i] = new MechanismStandard("APCount")
+ms[i].set("n", 0, 0)
+ms[i].set("thresh", 0, 0)
+ms[i].set("time", 5.2591, 0)
+mt.select("APCount") i = mt.selected() maction(i)
+hoc_ac_ = 0.5
+sec.sec move() d1.flip_to(0)
+}
+{object_pop() doNotify()}
+{
+ocbox_ = ocbox_.v1
+ocbox_.map("PointProcessManager", 312, 22, 208, 298)
+}
+objref ocbox_
+//End PointProcessManager
+
+{WindowMenu[0].ses_gid(0, 0, 1, "Jerome Channels Group")}
+{
+xpanel("RunControl", 0)
+v_init = -75
+xvalue("Init","v_init", 1,"stdinit()", 1, 1 )
+xbutton("Init & Run","run()")
+xbutton("Stop","stoprun=1")
+runStopAt = 15
+xvalue("Continue til","runStopAt", 1,"{continuerun(runStopAt) stoprun=1}", 1, 1 )
+runStopIn = 0.1
+xvalue("Continue for","runStopIn", 1,"{continuerun(t + runStopIn) stoprun=1}", 1, 1 )
+xbutton("Single Step","steprun()")
+t = 5.06548
+xvalue("t","t", 2 )
+tstop = 8
+xvalue("Tstop","tstop", 1,"tstop_changed()", 0, 1 )
+dt = 0.00053572
+xvalue("dt","dt", 1,"setdt()", 0, 1 )
+steps_per_ms = 200
+xvalue("Points plotted/ms","steps_per_ms", 1,"setdt()", 0, 1 )
+xcheckbox("Quiet",&stdrun_quiet,"")
+realtime = 22.34
+xvalue("Real Time","realtime", 0,"", 0, 1 )
+xpanel(945,22)
+}
+{WindowMenu[0].ses_gid(0, 0, 1, "Jerome Channels Group")}
+{
+xpanel("Temperature", 0)
+celsius = 37
+xvalue("celsius","celsius", 1,"", 0, 1 )
+xpanel(947,464)
+}
+{WindowMenu[0].ses_gid(0, 0, 1, "Jerome Channels Group")}
+
+//Begin VariableTimeStep
+{
+ocbox_ = NumericalMethodPanel[0]
+}
+{object_push(ocbox_)}
+{
+atol_ = 0.001  CVode[0].atol(atol_)
+restore(412, 2)
+}
+{object_pop()}
+{
+ocbox_.map("VariableTimeStep", 945, 354, 253, 86)
+}
+objref ocbox_
+//End VariableTimeStep
+
+{WindowMenu[0].ses_gid(0, 0, 1, "Jerome Channels Group")}
+objectvar scene_vector_[1]
+{doNotify()}

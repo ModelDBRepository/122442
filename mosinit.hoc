@@ -1,0 +1,7 @@
+load_file("nrngui.hoc")
+xpanel("Gow et al. 2009")
+  xlabel("Choose a simulation:")
+  xbutton("Double Cable Model (DCM)","load_file(\"DCM_0.6um_axon.ses\")")
+  xbutton("Tight Junction Model (TJM)","load_file(\"TJM_0.6um_axon.ses\")")
+  xbutton("Quit (to start over with other model)","quit()")
+xpanel()
